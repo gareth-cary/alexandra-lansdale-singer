@@ -1,1 +1,131 @@
 // Specific CSS for your home-page
+.banner-home-page {
+  background-image: url(https://images.unsplash.com/photo-1518600892756-02ed67d750f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80);
+  padding-top: 6vh;
+  padding-bottom: 4vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border-bottom: 9px solid darkgrey;
+}
+
+
+.title-home-page {
+  border-radius: 20px;
+  padding-bottom: 4px;
+  text-align: center;
+  margin: auto;
+  img {
+    width: 700px;
+  }
+  p {
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+  }
+}
+
+.home-page-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px lightgrey;
+  margin-bottom: 22px;
+}
+
+.margin-top-info {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-info-home-page {
+  h2 {
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+  }
+  p {
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+  }
+}
+
+.about-title {
+  h1 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 47px;
+    border-bottom: 2px solid lightgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.button-home {
+  color: white;
+  text-align: center;
+  display: block;
+  border: 3px solid white;
+  width: 200px;
+  margin: auto;
+  font-size: 32px;
+  font-family: 'Roboto Slab', serif;
+  &:hover {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    transition: 0.5s;
+  }
+}
+
+.button2 {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.margin-bottom-home {
+  border-bottom: 3px solid lightgrey;
+}
+
+@media (max-width: 850px) {
+  .title-home-page {
+    img {
+      width: 98%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .title-home-page {
+    img {
+      width: 98%;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .button-home {
+    width: 126px;
+    margin: auto;
+    margin-top: 0px;
+    font-size: 19px
+  }
+  .about-title {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .about-info-home-page {
+    h2 {
+      text-align: center;
+    }
+  }
+  .soprano {
+    text-align: center;
+  }
+  .button2 {
+    font-size: 12px;
+  }
+}
