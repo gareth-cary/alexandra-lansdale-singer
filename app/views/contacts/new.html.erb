@@ -1,28 +1,42 @@
-<h1 id="page_title">Say hello</h1>
+
+<%= render "pages/navbar1" %>
 
 
-<%= form_for @contact do |f| %>
+<div class="contact-page-wrapping-whole-content">
+  <h1 id="page_title">Contact</h1>
 
-<%= f.label :name %><br>
-<%= f.text_field :name, required: true %>
+  <div class="contact-form-contact-new">
+    <div>
+      <%= form_for @contact do |f| %>
 
-<br>
+      <%= f.label :name, class: 'label_contact' %><br>
+      <%= f.text_field :name, required: true, class: 'text_area_contact' %>
 
-<%= f.label :email %><br>
-<%= f.email_field :email, required: true %>
+      <br>
 
-<br>
+      <%= f.label :email, class: 'label_contact' %><br>
+      <%= f.email_field :email, required: true, class: 'text_area_contact' %>
 
-<%= f.label :message %><br>
-<%= f.text_area :message, as: :text %>
+      <br>
 
-<div class="hidden">
-  <%= f.label :nickname %><br>
-  <%= f.text_field :nickname, hint: 'leave this field blank' %>
+      <%= f.label :message, class: 'label_contact' %><br>
+      <%= f.text_area :message, as: :text, class: 'message_area_contact' %>
+
+      <div class="hidden">
+        <%= f.label :nickname %><br>
+        <%= f.text_field :nickname, hint: 'leave this field blank' %>
+      </div>
+
+      <br>
+      <br>
+
+      <%= f.submit 'Send Message', class: 'button_contact' %>
+
+      <% end %>
+
+    </div>
+  </div>
 </div>
 
-<br>
 
-<%= f.submit 'send message', class: 'button' %>
-
-<% end %>
+<%= render "pages/footer1" %>

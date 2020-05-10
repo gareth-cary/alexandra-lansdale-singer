@@ -1,5 +1,5 @@
-.footer1 {
-  height: 24vh;
+.footer2 {
+  height: 14vh;
   width: 100%;
   background-color: #333333;
   color: white;
@@ -8,18 +8,21 @@
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-family: 'Roboto Slab', serif;
   p {
     font-size: 16px;
   }
 }
 
 .footer-logo {
-  width: 300px;
+  width: 230px;
 }
 
 @media (max-width: 850px) {
-  .footer1 {
+  .footer2 {
     height: 40vh;
   }
   .footer-logo {
@@ -29,7 +32,7 @@
 
 
 @media (max-width: 450px) {
-  .footer1 {
+  .footer2 {
     padding-left: 5px;
     padding-right: 5px;
     justify-content: space-evenly;
@@ -43,6 +46,8 @@
   }
 
   .footer-logo {
-    width: 130px;
+    width: 120px;
   }
 }
+
+

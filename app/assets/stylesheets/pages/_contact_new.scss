@@ -1,0 +1,55 @@
+#page_title {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.contact-page-wrapping-whole-content {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url('https://images.unsplash.com/photo-1482575832494-771f74bf6857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  height: 100vh;
+  background-size: cover;
+  font-family: 'Roboto Slab', serif;
+  padding-top: 7%;
+}
+
+.contact-form-contact-new {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+.text_area_contact {
+  width: 400px;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.message_area_contact {
+  width: 400px;
+  height: 250px;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.label_contact {
+  font-size: 18px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+.button_contact {
+  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) );
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  color: black;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  &:hover {
+      transition: 0.7s;
+      background-color: white;
+
+  }
+}
