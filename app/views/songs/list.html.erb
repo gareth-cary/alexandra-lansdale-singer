@@ -1,0 +1,40 @@
+<%= render "pages/nav-bar1" %>
+
+<div class="form-position">
+  <div class="banner-song-page">
+    <h1>Alexandra Lansdale - Song List</h1>
+    <p style="color: white;"><em>Here is a selection of songs from Alex's repertoire.</em></p>
+    <p style="color: white;"><em>If you want any other song requests that aren't on the list, please don't hesitate to ask.</em></p>
+    <br>
+    <div class="button-home-page-margin"><%= link_to "Book Now", contact_path, class: "button-song-page" %></div>
+   <div class="form_index">
+    </div>
+       <div class="in-line">
+        <%= simple_form_for :search, url: songs_list_path, method: :get do |f| %>
+        <%= f.input_field :genre, collection: ["Folk", "Contempory", "Classical", "All"], required: false, input_html: { class: "form_input" } %>
+        <%= f.submit "Search", class: "button-list-page"%>
+      <% end %>
+      </div>
+  </div>
+</div>
+
+<div class="items">
+  <div class="row-of-items">
+      <% @songs.each do |song| %>
+      <div class="card-product">
+        <img src=" <%= song.image %>", alt="Book Club photos" />
+        <div class="card-product-infos">
+          <h3>Genre:  <em><%= "#{song.genre}" %></em></h3>
+          <h4>Song:  <em> <%= "#{song.name}" %></em></h4>
+          <p><%= "#{song.artist}" %></p>
+        </div>
+      </div>
+      <% end %>
+  </div>
+
+</div>
+<br>
+<br>
+<br>
+
+<%= render "pages/footer" %>

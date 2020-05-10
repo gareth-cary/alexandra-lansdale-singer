@@ -1,0 +1,68 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 9px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20000;
+  a {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 9px;
+    padding: 8px 21px;
+    &:hover {
+      color: white;
+      text-decoration: none;
+      background-color: black;
+      transition: 0.5s;
+    }
+  }
+}
+
+.nav-bar-home-page {
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 9px;
+  position: fixed;
+  top: 0;
+  z-index: 20000;
+  a {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 9px;
+    padding: 8px 21px;
+      &:hover {
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        transition: 0.5s;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-bar-home-page {
+    font-size: 14px;
+    justify-content: center;
+    width: 100%;
+    justify-content: center;
+    a {
+      margin-top: 15px;
+      padding: 4px 10px;
+    }
+  }
+  .topnav {
+    font-size: 14px;
+    justify-content: center;
+    a {
+      padding: 5px 12px;
+    }
+  }
+}

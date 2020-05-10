@@ -1,0 +1,104 @@
+.contact-info-alex {
+  text-align: center;
+}
+
+.background-contact-page {
+  background-image: url(https://images.unsplash.com/photo-1524563216914-d552816e4d67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  height: 100vh;
+  padding-bottom: 380px;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapping-contact-info {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 520px;
+  display: inline-block;
+  padding: 20px 20px;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 260px;
+
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.button-page {
+  color: black;
+  background-color: lightgrey;
+  padding: 6px 22px;
+  font-size: 20px;
+}
+
+.button-page:hover {
+ background-color: white;
+ text-decoration: none;
+ color: black;
+ transition: 0.5s;
+}
+
+.phone-number {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+@media (max-height: 1380px) and (min-height: 1350px) {
+  .wrapping-contact-info {
+    margin-top: 44%;
+  }
+}
+
+/* ipad pro horizontal */
+@media (max-height: 1050px) {
+  .wrapping-contact-info {
+    margin-top: 16%;
+  }
+}
+
+/* ipad horizontal */
+@media (max-height: 800px) {
+  .wrapping-contact-info {
+    margin-top: 210px;
+  }
+}
+
+/* mobile device horizontal */
+@media (max-height: 450px) {
+  .wrapping-contact-info {
+    width: 350px;
+    margin-top: 13%;
+    padding: 1px 1px;
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .button-page {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+/* mobile device vertical */
+@media (max-width: 430px) {
+  .wrapping-contact-info {
+    width: 250px;
+    margin-top: 60%;
+    padding: 1px 1px;
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .button-page {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
