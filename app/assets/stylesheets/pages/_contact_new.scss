@@ -53,3 +53,92 @@
 
   }
 }
+
+@media (max-width: 1030px) {
+  .contact-page-wrapping-whole-content {
+    padding-top: 24%;
+  }
+   #page_title {
+    font-size: 50px;
+    color: white;
+  }
+  .text_area_contact {
+    width: 460px;
+    font-size: 15px;
+  }
+  .message_area_contact {
+    width: 460px;
+    height: 260px;
+    font-size: 15px;
+  }
+  .label_contact {
+    font-size: 15px;
+  }
+  .button_contact {
+    font-size: 30px;
+  }
+}
+
+@media (max-height: 775px) and (min-height: 760px) {
+   .contact-page-wrapping-whole-content {
+    padding-top: 7%;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .contact-page-wrapping-whole-content {
+    padding-top: 16%;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-page-wrapping-whole-content {
+    padding-top: 26%;
+  }
+  #page_title {
+    font-size: 40px;
+    color: white;
+  }
+  .text_area_contact {
+    width: 350px;
+    font-size: 15px;
+  }
+  .message_area_contact {
+    width: 350px;
+    height: 170px;
+    font-size: 15px;
+  }
+  .label_contact {
+    font-size: 15px;
+  }
+  .button_contact {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .contact-page-wrapping-whole-content {
+    padding-top: 21%;
+  }
+  #page_title {
+    font-size: 34px;
+    color: white;
+  }
+  .text_area_contact {
+    width: 300px;
+    font-size: 15px;
+  }
+  .message_area_contact {
+    width: 300px;
+    height: 130px;
+    font-size: 15px;
+  }
+  .label_contact {
+    font-size: 15px;
+  }
+  .button_contact {
+    font-size: 20px;
+  }
+}

@@ -23,7 +23,7 @@
 
 @media (max-width: 850px) {
   .footer2 {
-    height: 40vh;
+    height: 16vh;
   }
   .footer-logo {
     width: 200px;
@@ -33,20 +33,7 @@
 
 @media (max-width: 450px) {
   .footer2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    justify-content: space-evenly;
-    height: 22vh;
-    p {
-      font-size: 11px;
-    }
-    h3 {
-      font-size: 13px;
-    }
-  }
-
-  .footer-logo {
-    width: 120px;
+   visibility: hidden;
   }
 }
 
